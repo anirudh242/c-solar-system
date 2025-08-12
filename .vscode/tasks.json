@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "cppbuild",
+      "label": "C/C++: gcc.exe build active file",
+      "command": "C:/MinGW/bin/gcc.exe",
+      "args": [
+        "-g",
+        "-std=c11",
+        "-I${workspaceFolder}/include",
+        "-L${workspaceFolder}/lib",
+        "${workspaceFolder}/src/main.c",
+        "${workspaceFolder}/src/glad.c",
+        "-lglfw3dll",
+        "-lopengl32",
+        "-lgdi32",
+        "-o",
+        "${workspaceFolder}/cutable.exe"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": "build",
+      "detail": "compiler: C:/MinGW/bin/gcc.exe"
+    }
+  ]
+}
